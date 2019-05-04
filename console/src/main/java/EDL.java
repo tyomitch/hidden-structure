@@ -866,7 +866,7 @@ public class EDL {
         }
         
         //now going to examine resulting grammar
-        if (final_eval == 0 || final_eval == 1) {z
+        if (final_eval == 0 || final_eval == 1) {
             writer.println("------------------EVALUATING-------------FINAL----------------GRAMMAR--------------------");
             writer.println("The final grammar is:\n" + gr);
             if (ur_learning){

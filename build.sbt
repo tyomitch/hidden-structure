@@ -21,5 +21,6 @@ fork in run := true
 lazy val root = project.in(file("."))
   .dependsOn(gui, cmdline)
 
-compile <<= (compile in Compile)
+compile := (compile in Compile)
   .dependsOn(assembly in gui, assembly in cmdline)
+  .value
